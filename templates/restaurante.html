@@ -8,15 +8,35 @@
 <title>Formulario Registro</title>
 </head>
 <body>
-<section class="form-register">
-<h4>Restaurantes</h4>
-<input class="controls" type="text" name="nombre" id="nombew" placeholder="Nombre">
-<input class="controls" type="text" name="lugar" id="lugar" placeholder="Direccion">
-<input class="controls" type="text" name="telefono" id="telefono" placeholder="Telefono">
-<input class="controls" type="text" name="categoria" id="categoria" placeholder="Categoria">
-<p><a href="#"></a></p>
-<input class="botons" type="submit" value="Registrar">
-</section>
+    <header id="navbar">
+        <div id="nombre">
+            <h1 class="titulo">Diseño</h1>
+            <h1 class="titulo" style="color:rgb(18, 147, 212);">Multimedia</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="/registrar">CREAR EVENTO</a>
+            </li>
+            <li>
+                <a href="/ingresar">REGISTRAR RESTAURANTE</a>
+            </li>
+            <li>
+                <a href="servicios.html">VER EVENTOS</a>
+            </li>
+        </ul>
+    </header>
+    <section class="form-register">
+        <h4>Restaurantes</h4>
+        <form action="/registrar" method="POST">
+            <input class="controls" type="text" name="id" id="id" placeholder="Identificación">
+            <input class="controls" type="text" name="nombre" id="nombew" placeholder="Nombre">
+            <input class="controls" type="text" name="lugar" id="lugar" placeholder="Direccion">
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Telefono">
+            <input class="controls" type="text" name="categoria" id="categoria" placeholder="Categoria">
+            <p><a href="#"></a></p>
+            <input class="botons" type="submit" value="Registrar">
+        </form>
+    </section>
 
 </body>
 </html>

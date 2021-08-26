@@ -1,5 +1,56 @@
-body {
-background-image: url('images/fondo.jpg');
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark-color);
+    height: 80px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+header a:hover {
+    color: var(--primary-color);
+}
+
+#nombre {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nombre .titulo {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 5px;
+    background-color: rgb(18, 147, 212);
+}
+
+:root {
+    --dark-color: rgb(35, 40, 44);
+    --light-color: rgba(241, 237, 237, 0.938);
+    --primary-color: rgb(18, 147, 212);
 }
 
 .form-register {
