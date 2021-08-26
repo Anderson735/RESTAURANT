@@ -15,10 +15,10 @@
         </div>
         <ul>
             <li>
-                <a href="index.html">CREAR EVENTO</a>
+                <a href="/registrar">CREAR EVENTO</a>
             </li>
             <li>
-                <a href="restaurante.html">REGISTRAR RESTAURANTE</a>
+                <a href="/ingresar">REGISTRAR RESTAURANTE</a>
             </li>
             <li>
                 <a href="servicios.html">VER EVENTOS</a>
@@ -27,12 +27,15 @@
     </header>
 <section class="form-register">
     <h4>Eventos</h4>
-    <input class="controls" type="text" name="fecha" id="fecha" placeholder="Fecha para publicacion MM/DD/AAAA">
-    <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="Descripcion">
-    <input class="controls" type="text" name="fecha" id="fecha" placeholder="Fecha del evento MM/DD/AAAA">
-    <input class="controls" type="text" name="fecha" id="fecha" placeholder="Fecha finalizacion evento MM/DD/AAAA">
-    <p><a href="#"></a></p>
-    <input class="botons" type="submit" value="Registrar">
+    <form action="/ingresar" method="POST">
+        <input class="controls" type="date" name="fecha" id="fecha" placeholder="Fecha para publicacion MM/DD/AAAA">
+        <input class="controls" type="text" name="restaurante" id="restaurante" placeholder="Restaurante">
+        <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="Descripcion">
+        <input class="controls" type="date" name="fechae" id="fecha" placeholder="Fecha del evento MM/DD/AAAA">
+        <input class="controls" type="date" name="fechaf" id="fecha" placeholder="Fecha finalizacion evento MM/DD/AAAA">
+        <p><a href="#"></a></p>
+        <input class="botons" type="submit" value="Registrar">
+    </form>
 </section>
 
 </body>
