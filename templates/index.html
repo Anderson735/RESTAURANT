@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
 <link rel="stylesheet" href="static/css/style.css">
 <title>Formulario Registro</title>
 </head>
@@ -15,23 +16,27 @@
         </div>
         <ul>
             <li>
-                <a href="/registrar">CREAR EVENTO</a>
+                <a href="/ingresar">CREAR EVENTO</a>
             </li>
             <li>
-                <a href="/ingresar">REGISTRAR RESTAURANTE</a>
+                <a href="/registrar">REGISTRAR RESTAURANTE</a>
             </li>
             <li>
-                <a href="servicios.html">VER EVENTOS</a>
+                <a href="/mostrar">VER EVENTOS</a>
             </li>
         </ul>
     </header>
 <section class="form-register">
     <h4>Eventos</h4>
-    <form action="/ingresar" method="POST">
+    <form action="/registrar" method="POST">
+        <label for="start">Fecha de publicación</label>
+        <input class="controls" type="text" name="id" id="id" placeholder="Identificación del evento">
         <input class="controls" type="date" name="fecha" id="fecha" placeholder="Fecha para publicacion MM/DD/AAAA">
-        <input class="controls" type="text" name="restaurante" id="restaurante" placeholder="Restaurante">
+        <input class="controls" type="text" name="restaurante" id="restaurante" placeholder="Identificación del restaurante">
         <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="Descripcion">
+        <label for="start">Fecha del evento</label>
         <input class="controls" type="date" name="fechae" id="fecha" placeholder="Fecha del evento MM/DD/AAAA">
+        <label for="start">Fecha de finalización del evento</label>
         <input class="controls" type="date" name="fechaf" id="fecha" placeholder="Fecha finalizacion evento MM/DD/AAAA">
         <p><a href="#"></a></p>
         <input class="botons" type="submit" value="Registrar">
